@@ -1,3 +1,4 @@
+```
 // start
 
 cl_color 3
@@ -110,3 +111,4 @@ bind Rwin "say_team I pressed the Windows key! Tabbing back into the game."
 
 // end
 host_writeconfig
+```
