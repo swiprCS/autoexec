@@ -1,4 +1,3 @@
-```
 // start
 
 cl_color 3
@@ -81,13 +80,17 @@ viewmodel_offset_z "-2"
 viewmodel_fov "68"
 viewmodel_presetpos "4"
 
-// radar
-cl_radar_always_centered "0"
-cl_radar_scale "0.4"
-cl_hud_radar_scale "1.2"
-cl_radar_icon_scale_min "1"
-cl_radar_rotate "1"
-cl_radar_square_with_scoreboard "1"
+// seangares radar
+cl_hud_radar_scale "1.15";
+hud_scaling "0.850000";
+hud_showtargetid "1";
+cl_radar_always_centered "1";
+cl_radar_icon_scale_min "0.6";
+cl_radar_scale "0.42";
+cl_radar_square_with_scoreboard "1";
+cl_radar_always_centered "0";
+cl_radar_icon_scale_min "0.6";
+cl_radar_rotate "1";
 
 // dmg given
 developer "0"
@@ -109,6 +112,7 @@ cl_use_opens_buy_menu "0"
 bind Lwin "say_team I pressed the Windows key! Tabbing back into the game."
 bind Rwin "say_team I pressed the Windows key! Tabbing back into the game."
 
+clear
+
 // end
 host_writeconfig
-```
