@@ -21,8 +21,13 @@ cl_showloadout 1
 // disables motd ads
 cl_disablehtmlmotd 1
 
+// smoke xhair
+bind mouse4 "toggle cl_crosshairsize 1000 3"
+
 bind "o" "say ¯\_(ツ)_/¯"
 bind "p" "say (╯°□°）╯︵ ┻━┻)"
+bind "[" "say ns. (҂◡_◡)"
+bind "]" "say stab stab <==[]=C(ړײ)‎​​"
 
 bind m "buy p250;drop"
 bind , "buy ump45;drop"
@@ -30,14 +35,6 @@ bind , "buy ump45;drop"
 bind mwheelup +jump
 bind mwheeldown +jump
 
-// removes the shifting of the arm when crouching down.
-cl_viewmodel_shift_left_amt "0"
-cl_viewmodel_shift_right_amt "0"
-
-// removes the bobbing of the weapon back and forth, when you run.
-cl_bob_lower_amt "0"
-cl_bobamt_lat "0"
-cl_bobamt_vert "0"
 
 // grenade binds
 bind "z" "use weapon_hegrenade;"
@@ -74,11 +71,36 @@ cl_crosshair_drawoutline "1"
 //cl_crosshair_drawoutline "0"
 
 // custom stuff
+//viewmodel_offset_x "2.5"
+//viewmodel_offset_y "-3"
+//viewmodel_offset_z "-2"
+//viewmodel_fov "68"
+//viewmodel_presetpos "4"
+
+// removes the shifting of the arm when crouching down.
+//cl_viewmodel_shift_left_amt "0"
+//cl_viewmodel_shift_right_amt "0"
+
+// removes the bobbing of the weapon back and forth, when you run.
+//cl_bob_lower_amt "0"
+//cl_bobamt_lat "0"
+//cl_bobamt_vert "0"
+
+cl_viewmodel_shift_left_amt "0.500000"
+cl_viewmodel_shift_right_amt "0.250000"
+viewmodel_fov "54"
 viewmodel_offset_x "2.5"
-viewmodel_offset_y "-3"
+viewmodel_offset_y "-2"
 viewmodel_offset_z "-2"
-viewmodel_fov "68"
-viewmodel_presetpos "4"
+viewmodel_presetpos "0"
+viewmodel_recoil "1.0"
+cl_bob_lower_amt "5.000000"
+cl_bobamt_lat "0.100000"
+cl_bobamt_vert "0.100000"
+cl_bobcycle "0.98"
+cl_crosshair_sniper_width 2
+
+bindtoggle end cl_righthand
 
 // seangares radar
 cl_hud_radar_scale "1.15";
