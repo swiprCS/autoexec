@@ -12,6 +12,9 @@ fps_max 999
 net_graph 1
 net_graphproportional font 0
 
+// mutes enemy
+cl_mute_enemy_team 1
+
 // adds buys overhead
 +cl_show_team_equipment
 
@@ -28,13 +31,16 @@ bind "o" "say ¯\_(ツ)_/¯"
 bind "p" "say (╯°□°）╯︵ ┻━┻)"
 bind "[" "say ns. (҂◡_◡)"
 bind "]" "say stab stab <==[]=C(ړײ)‎​​"
+bind "l" "say ( ° ͜ʖ͡°)Ɑ͞  ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶͞ ̶̶͞͞ ̶ ﻝﮞ"
 
 bind m "buy p250;drop"
-bind , "buy ump45;drop"
+// bind , "buy ump45;drop"
+bind , "buy mp9; buy mac10;drop"
+
+bind F4 "buy hegrenade; buy smokegrenade; buy molotov; buy incgrenade; buy flashbang;"
 
 bind mwheelup +jump
 bind mwheeldown +jump
-
 
 // grenade binds
 bind "z" "use weapon_hegrenade;"
@@ -53,6 +59,9 @@ bind "alt" "+jumpthrow"
 alias +cjump "+jump; +duck"     
 alias -cjump "-jump; -duck"
 bind space +cjump
+
+// volume toggle
+bind home "toggle volume .01 .8"
 
 // crosshair
 cl_crosshaircolor "1"
@@ -86,12 +95,22 @@ cl_crosshair_drawoutline "1"
 //cl_bobamt_lat "0"
 //cl_bobamt_vert "0"
 
+// huntsman
+//cl_viewmodel_shift_left_amt "0.500000"
+//cl_viewmodel_shift_right_amt "0.250000"
+//viewmodel_fov "54"
+//viewmodel_offset_x "2.5"
+//viewmodel_offset_y "-2"
+//viewmodel_offset_z "-2"
+
+// karambit
 cl_viewmodel_shift_left_amt "0.500000"
 cl_viewmodel_shift_right_amt "0.250000"
 viewmodel_fov "54"
-viewmodel_offset_x "2.5"
-viewmodel_offset_y "-2"
-viewmodel_offset_z "-2"
+viewmodel_offset_x "2.400000"
+viewmodel_offset_y "-1.500000"
+viewmodel_offset_z "-0.700000"
+
 viewmodel_presetpos "0"
 viewmodel_recoil "1.0"
 cl_bob_lower_amt "5.000000"
@@ -100,6 +119,10 @@ cl_bobamt_vert "0.100000"
 cl_bobcycle "0.98"
 cl_crosshair_sniper_width 2
 
+// to keep stickers looking right
+cl_righthand 1 
+
+// to toggle to left hand.. Keep stickers looking correct
 bindtoggle end cl_righthand
 
 // seangares radar
@@ -125,14 +148,16 @@ m_rawinput "1"
 m_mouseaccel1 "0"
 m_mouseaccel2 "0"
 m_mousespeed "0"
-sensitivity "1.8"
+sensitivity "2.1"
 zoom_sensitivity_ratio_mouse "1.0"
+
+cl_buywheel_nomousecentering 1
 
 // doesn't allow E to open buy menu
 cl_use_opens_buy_menu "0"
 
-bind Lwin "say_team I pressed the Windows key! Tabbing back into the game."
-bind Rwin "say_team I pressed the Windows key! Tabbing back into the game."
+bind rwin "say_team I pressed the Windows key! Tabbing back into the game."
+bind lwin "say_team I pressed the Windows key! Tabbing back into the game."
 
 clear
 
